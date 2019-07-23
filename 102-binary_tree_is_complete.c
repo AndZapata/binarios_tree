@@ -19,8 +19,10 @@ unsigned int tree_size(const binary_tree_t *tree)
  * binary_tree_depth - function that measures the depth of a node
  * in a binary tree
  *
- * @tree:  is a pointer to the node to measure the depth
- * Return: if tree is NULL, your function must return 0.
+ * @tree: is a pointer to the root node of the tree to check
+ * @index: index
+ * @count: number of nodes
+ * Return: recursion.
  */
 int complete_tree(const binary_tree_t *tree, unsigned int index,
                  unsigned int count)
@@ -36,10 +38,9 @@ int complete_tree(const binary_tree_t *tree, unsigned int index,
 }
 
 /**
- * binary_tree_depth - function that measures the depth of a node
- * in a binary tree
+ * binary_tree_is_complete - function that checks if a binary tree is complete
  *
- * @tree:  is a pointer to the node to measure the depth
+ * @tree: is a pointer to the root node of the tree to rotate
  * Return: if tree is NULL, your function must return 0.
  */
 
