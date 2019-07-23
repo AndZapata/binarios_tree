@@ -1,11 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - Comentario
+ * binary_tree_insert_left - function that insert a node as the left-child.
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @parent: ppointer to the node to insert the left-child
+ * @value: is the value to store in the new node
+ * Return: felt_nod, or null if the parent doesn't exists.
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {

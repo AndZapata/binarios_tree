@@ -1,11 +1,11 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_right - Comentario
+ * binary_tree_insert_right - funtion to insert a node as the right-child
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @parent: pointer to the node to insert the right-child
+ * @value: is the value to store in the new node
+ * Return: null if parent doesn't exists, and right-node if success.
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
