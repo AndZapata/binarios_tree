@@ -1,11 +1,12 @@
 #include "binary_trees.h"
+
 /**
-* binary_tree_insert_right - Comentario
+ * binary_tree_sibling - function that finds the sibling of a node
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @node: is a pointer to the node to find the sibling
+ * Return: 0 if parent, node, or has no sibling, otherwise return the sibling
  */
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (!node || !node->parent)

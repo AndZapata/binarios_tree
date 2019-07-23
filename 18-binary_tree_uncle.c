@@ -1,10 +1,10 @@
 #include "binary_trees.h"
+
 /**
-* binary_tree_insert_right - Comentario
+ * binary_tree_uncle - function that finds the uncle of a node.
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @node: is a pointer to the node to find the uncle
+ * Return: null if node, parent or uncle doesn't exists, otherwise return node
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
