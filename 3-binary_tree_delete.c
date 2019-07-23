@@ -1,11 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_right - Comentario
+ * binary_tree_delete - function to free a binary tree
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @tree: pointer to the complete binary tree
+ * Return: nothing
  */
 void binary_tree_delete(binary_tree_t *tree)
 {

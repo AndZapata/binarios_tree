@@ -1,11 +1,10 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_right - Comentario
+ * binary_tree_delete - funtion to check if a node is a leaf.
  *
- * @parent: Comentario
- * @value: Comentario
- * Return: Comentario
+ * @node: pointer to the node to check.
+ * Return: 0 if the node doesn't exists or no null and 1 if the nodes are null
  */
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
