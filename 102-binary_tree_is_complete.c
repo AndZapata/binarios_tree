@@ -1,11 +1,12 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_size - function that measures the size of a binary tree
+ * tree_size - function that measures the size of a binary tree
  *
  * @tree: is a pointer to the root node of the tree to measure the size
  * Return: If tree is NULL, the function must return 0.
  */
+
 unsigned int tree_size(const binary_tree_t *tree)
 {
 	if (tree == NULL)
@@ -24,8 +25,9 @@ unsigned int tree_size(const binary_tree_t *tree)
  * @count: number of nodes
  * Return: recursion.
  */
+
 int complete_tree(const binary_tree_t *tree, unsigned int index,
-                 unsigned int count)
+		  unsigned int count)
 {
 	if (tree == NULL)
 		return (1);
@@ -34,7 +36,7 @@ int complete_tree(const binary_tree_t *tree, unsigned int index,
 		return (0);
 
 	return (complete_tree(tree->left, 2 * index + 1, count) &&
-		complete_tree(tree->right, 2*index + 2, count));
+		complete_tree(tree->right, 2 * index + 2, count));
 }
 
 /**
