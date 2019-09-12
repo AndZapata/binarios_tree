@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script to install all the needed stuff
+sudo apt-get update -y
+sudo apt-get install emacs -y
+sudo apt-get upgrade
+sudo apt-get git -y
+sudo apt-get install shellcheck -y
+sudo apt-get install python3-pep8 -y
+sudo apt-get install python3-pip -y
+sudo pip install pep8
+git clone https://github.com/holbertonschool/Betty.git
+echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a /etc/apt/sources.list
+sudo apt-get update -y
+sudo apt-get install mysql-server-5.7
